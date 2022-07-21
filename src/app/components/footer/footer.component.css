@@ -1,0 +1,9 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+  height: 50px;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}

@@ -3,16 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
+import { AboutPageComponent } from './components/about-page/about-page.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { MenuPageComponent } from './components/menu-page/menu-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+import { AllMealsComponent } from './components/all-meals/all-meals.component';
+import { MealListComponent } from './components/meal-list/meal-list.component';
+import { MealDetailComponent } from './components/meal-list/meal-detail/meal-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomePageComponent,
+    AboutPageComponent,
+    NavigationComponent,
+    MenuPageComponent,
+    FooterComponent,
+    AllMealsComponent,
+    MealListComponent,
+    MealDetailComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,30 @@
+<div class="category-header">
+  <h2>{{ category }}</h2>
+</div>
+<div class="container">
+  <div class="wrapper">
+    <table>
+      <tr>
+        <th>No.</th>
+        <th>Meal ID:</th>
+        <th>Meal name:</th>
+        <th>Meal image</th>
+      </tr>
+      <tr *ngFor="let meal of meals" (click)="seeDetails(meal.idMeal)">
+        <td>{{ meals.indexOf(meal) + 1 }}</td>
+        <td>{{ meal.idMeal }}</td>
+        <td>{{ meal.strMeal }}</td>
+        <td>
+          <img
+            class="img-thumbnail"
+            src="{{ meal.strMealThumb }}"
+            alt="meal-thumbnail"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="wrapper">
+    <app-meal-detail></app-meal-detail>
+  </div>
+</div>
