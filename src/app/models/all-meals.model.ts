@@ -1,7 +1,8 @@
 export interface AllMealsModel {
-  idCategory: string;
+  idMeal: string;
+  strMeal: string;
   strCategory: string;
-  strCategoryThumb: string;
-  strCategoryDescription: string;
-  tags: string;
+  strMealThumb: string;
+  strArea: string;
+  strTags: string;
 }

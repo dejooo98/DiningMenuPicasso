@@ -29,3 +29,7 @@ table td {
   border: 1px solid #deb88799;
   cursor: pointer;
 }
+table tr:hover {
+  background-color: #deb88799;
+  color: #fff;
+}

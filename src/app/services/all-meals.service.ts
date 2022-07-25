@@ -13,7 +13,7 @@ export class AllMealsService {
   getAllCategories(): Observable<AllMealsModel[]> {
     return this.http
       .get<{ categories: AllMealsModel[] }>(
-        `https://www.themealdb.com/api/json/v1/1/categories.php`
+        `www.themealdb.com/api/json/v1/1/search.php?f=a`
       )
       .pipe(map((response) => response.categories));
   }

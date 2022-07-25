@@ -1,3 +1,4 @@
+import { MealByAreaComponent } from './components/meal-by-area/meal-by-area.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AllMealsComponent } from './components/all-meals/all-meals.component';
 import { MealListComponent } from './components/meal-list/meal-list.component';
 import { MealDetailComponent } from './components/meal-list/meal-detail/meal-detail.component';
+import { MealByAreaDetailComponent } from './components/meal-by-area/meal-by-area-detail/meal-by-area-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { MealDetailComponent } from './components/meal-list/meal-detail/meal-det
     AllMealsComponent,
     MealListComponent,
     MealDetailComponent,
+    MealByAreaComponent,
+    MealByAreaDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
