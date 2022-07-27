@@ -1,4 +1,4 @@
-export interface DetailAboutModel {
+export interface DetailModel {
   idMeal: string;
   strMeal: string;
   strDrinkAlternate?: any;

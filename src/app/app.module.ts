@@ -10,10 +10,12 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { MenuPageComponent } from './components/menu-page/menu-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
-import { AllMealsComponent } from './components/all-meals/all-meals.component';
 import { MealListComponent } from './components/meal-list/meal-list.component';
 import { MealDetailComponent } from './components/meal-list/meal-detail/meal-detail.component';
 import { MealByAreaDetailComponent } from './components/meal-by-area/meal-by-area-detail/meal-by-area-detail.component';
+import { AllCategoriesComponent } from './components/all-categories/all-categories.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AllCategoriesDetailComponent } from './components/all-categories/all-categories-detail/all-categories-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,20 @@ import { MealByAreaDetailComponent } from './components/meal-by-area/meal-by-are
     NavigationComponent,
     MenuPageComponent,
     FooterComponent,
-    AllMealsComponent,
     MealListComponent,
     MealDetailComponent,
     MealByAreaComponent,
     MealByAreaDetailComponent,
+    AllCategoriesComponent,
+    AllCategoriesDetailComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

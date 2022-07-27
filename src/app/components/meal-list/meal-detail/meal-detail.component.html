@@ -1,1 +1,65 @@
-<p>meal-detail works!</p>
+<div class="wraper">
+  <form #form="ngForm" *ngFor="let detail of details">
+    <label>Meal Id</label>
+    <input
+      type="text"
+      placeholder="Meal Id"
+      name="id"
+      [(ngModel)]="detail.idMeal"
+    />
+
+    <label>Meal Name</label>
+    <input
+      type="text"
+      placeholder="Meal Name"
+      name="name"
+      [(ngModel)]="detail.strMeal"
+    />
+    <label>Meal Image</label>
+    <img src="{{ detail.strMealThumb }}" alt="{{ detail.strMealThumb }}" />
+
+    <label>Meal Category</label>
+    <input
+      type="text"
+      placeholder="Meal Category"
+      name="category"
+      [(ngModel)]="detail.strCategory"
+    />
+
+    <label>Meal Area</label>
+    <input
+      type="text"
+      placeholder="Meal Area"
+      name="area"
+      [(ngModel)]="detail.strArea"
+    />
+
+    <label>Meal Tags</label>
+    <input
+      type="text"
+      placeholder="Meal Tags"
+      name="tags"
+      [(ngModel)]="detail.strTags"
+    />
+
+    <label>Meal Ingredients</label>
+    <input
+      type="text"
+      placeholder="Meal Ingredients"
+      name="ingredients"
+      [(ngModel)]="detail.strIngredient1"
+      [(ngModel)]="detail.strIngredient2"
+      [(ngModel)]="detail.strIngredient3"
+      [(ngModel)]="detail.strIngredient4"
+      [(ngModel)]="detail.strIngredient5"
+    />
+
+    <label>Meal Instructions</label>
+    <textarea
+      placeholder="Meal Instructions"
+      name="instructions"
+      rows="25"
+      [(ngModel)]="detail.strInstructions"
+    ></textarea>
+  </form>
+</div>

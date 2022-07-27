@@ -2,18 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs';
-import { AllMealsModel } from '../models/all-meals.model';
+import { AllCategModel } from '../models/all-categ.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AllMealsService {
+export class AllCategService {
   constructor(private http: HttpClient) {}
 
-  getAllCategories(): Observable<AllMealsModel[]> {
+  getAllCategories(): Observable<AllCategModel[]> {
     return this.http
-      .get<{ categories: AllMealsModel[] }>(
-        `www.themealdb.com/api/json/v1/1/search.php?f=a`
+      .get<{ categories: AllCategModel[] }>(
+        `https://www.themealdb.com/api/json/v1/1/categories.php`
       )
       .pipe(map((response) => response.categories));
   }

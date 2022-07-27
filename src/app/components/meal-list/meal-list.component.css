@@ -33,3 +33,16 @@ table tr:hover {
   background-color: #deb88799;
   color: #fff;
 }
+
+/* FORM */
+form {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+input[type="input"] {
+  margin: 0 15px;
+  border: none;
+  border-bottom: 1px solid;
+  font-size: 1.2rem;
+  outline: none;
+}

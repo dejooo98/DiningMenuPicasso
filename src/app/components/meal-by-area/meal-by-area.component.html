@@ -1,6 +1,15 @@
 <div class="category-header">
   <h2>{{ area }}</h2>
 </div>
+<form [formGroup]="searchForm">
+  <label for="search">Search meals: </label>
+  <input
+    formControlName="input"
+    name="search"
+    type="input"
+    placeholder="Enter meal name"
+  />
+</form>
 <div class="container">
   <div class="wrapper">
     <table>
@@ -27,6 +36,6 @@
     </table>
   </div>
   <div class="wrapper">
-    <app-meal-by-area-detail></app-meal-by-area-detail>
+    <router-outlet></router-outlet>
   </div>
 </div>
