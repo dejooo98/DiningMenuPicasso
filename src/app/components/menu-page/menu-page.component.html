@@ -1,0 +1,22 @@
+<div class="menu-container">
+  <div class="menu-header">
+    <h2>Menu</h2>
+  </div>
+  <div class="buttons-container">
+    <button (click)="getMealsByCategoryClick()">Meal by categories</button>
+    <button (click)="getMealsByAreaClick()">Meals by Area</button>
+    <button routerLink="/all-categories">All Categories</button>
+  </div>
+  <div class="meal-container" *ngIf="!statement">
+    <span
+      *ngFor="let meal of categories"
+      (click)="chooseCategory(meal.strCategory)"
+      >{{ meal.strCategory }}</span
+    >
+  </div>
+  <div class="meal-container" *ngIf="statement">
+    <span *ngFor="let mealA of national" (click)="chooseArea(mealA.strArea)">{{
+      mealA.strArea
+    }}</span>
+  </div>
+</div>

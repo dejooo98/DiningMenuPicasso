@@ -1,0 +1,29 @@
+.navigation-container {
+  display: flex;
+  width: 100%;
+}
+.logo {
+  color: #f59f34;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  font-family: cursive;
+  font-weight: bold;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+.links li {
+  list-style: none;
+  text-decoration: none;
+  color: #f59f34;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.links li:hover {
+  border-bottom: 1px solid #f59f34;
+}

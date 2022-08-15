@@ -1,0 +1,15 @@
+.about-header {
+  height: 200px;
+  background-color: #deb88799;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.about-content {
+  width: 90%;
+  height: 380px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-style: italic;
+}

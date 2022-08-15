@@ -1,0 +1,70 @@
+.container {
+  height: 90vh;
+  display: flex;
+  background: bisque;
+}
+
+.container_text {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.container_text h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #091614;
+  font-family: cursive;
+  margin: 0;
+}
+span {
+  color: #f59f34;
+}
+.container_text p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.container_image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-menu {
+  width: 200px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #f59f34;
+}
+.btn-menu:hover {
+  color: #f59f34;
+  border: 1px solid #f59f34;
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn-about {
+  width: 200px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: #f59f34;
+  cursor: pointer;
+}
+.btn-about:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #f59f34;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+<div class="wraper">
+  <form #form="ngForm" *ngFor="let detail of details">
+    <label>Meal Id</label>
+    <input
+      type="text"
+      placeholder="Category Id"
+      name="id"
+      [(ngModel)]="detail.idCategory"
+    />
+
+    <label>Category Name</label>
+    <input
+      type="text"
+      placeholder="Category Name"
+      name="name"
+      [(ngModel)]="detail.strCategory"
+    />
+
+    <label>Meal Image</label>
+    <img
+      src="{{ detail.strCategoryThumb }}"
+      alt="{{ detail.strCategoryThumb }}"
+    />
+
+    <label>Category Description</label>
+    <textarea
+      placeholder="Category Description"
+      name="description"
+      rows="25"
+      [(ngModel)]="detail.strCategoryDescription"
+    ></textarea>
+  </form>
+</div>
